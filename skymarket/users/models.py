@@ -6,7 +6,7 @@ from phonenumber_field.modelfields import PhoneNumberField
 
 # from skymarket.users.managers import UserRoles, UserManager
 # from managers import UserManager, UserRoles
-from skymarket.users.managers import UserManager, UserRoles
+from users.managers import UserManager, UserRoles
 
 
 class User(AbstractBaseUser):
