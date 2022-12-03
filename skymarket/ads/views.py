@@ -17,9 +17,10 @@ class AdViewSet(viewsets.ModelViewSet):
     queryset = Ad.objects.all()
     pagination_class = AdPagination
     permission_classes = [IsAuthenticated]
+    serializer_class = AdSerializer
 
     def get_serializer_class(self):
-        if self.action in ['retrieve']:
+        if self.action in ['retrieve', ]:
             return AdDetailSerializer
         return AdSerializer
 
